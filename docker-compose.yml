@@ -1,12 +1,9 @@
-
 services:
   backend:
     build:
       context: ./crm-backend
-    ports:
-      - "3100:3000"
-    volumes:
-      - ./crm-backend:/app
+    expose:
+      - "3000"
     environment:
       - NODE_ENV=production
       - PORT=3000
@@ -21,8 +18,8 @@ services:
     build:
       context: ./crm-frontend
       dockerfile: Dockerfile
-    ports:
-      - "8090:80"
+    expose:
+      - "80"
     environment:
       - NODE_ENV=production
     healthcheck:
