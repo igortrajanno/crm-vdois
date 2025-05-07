@@ -1,10 +1,11 @@
+version: "3.9"
 
 services:
   backend:
     build:
       context: ./crm-backend
-    expose:
-      - "3000"
+    ports:
+      - "3100:3000"  # Porta externa alterada de 3000 para 3100
     volumes:
       - ./crm-backend:/app
     environment:
@@ -21,8 +22,8 @@ services:
     build:
       context: ./crm-frontend
       dockerfile: Dockerfile
-    expose:
-      - "80"
+    ports:
+      - "8081:80"  # Porta externa alterada de 80 para 8081
     environment:
       - NODE_ENV=production
     healthcheck:
