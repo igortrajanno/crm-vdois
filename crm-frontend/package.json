@@ -1,0 +1,13 @@
+{
+  "name": "crm-frontend",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start:all": "sh ../start.sh"
+  },
+  "dependencies": {
+    "vite": "^5.0.0"
+  }
+}

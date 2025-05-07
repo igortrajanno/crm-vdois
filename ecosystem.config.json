@@ -1,0 +1,10 @@
+{
+  "apps": [
+    {
+      "name": "crm-backend",
+      "script": "server.js",
+      "cwd": "./crm-backend",
+      "watch": false
+    }
+  ]
+}

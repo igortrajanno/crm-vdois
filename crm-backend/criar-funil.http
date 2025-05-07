@@ -1,0 +1,7 @@
+POST http://localhost:4000/funis
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjOTUzM2UwNy0yOGI4LTQxYzEtOGQzMi1mNTMxYjFlNjE4YWYiLCJjb21wYW55SWQiOiI2YTc5ZGY4ZS00NjNkLTRmZjEtYmQ5My02YTZmMTVhNTNiYTAiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDYxMzIzNjMsImV4cCI6MTc0NjczNzE2M30.z7f0ehm65nHF5A8JMK0KAWhJqCAe0NbTRWm8pC6OcQM
+Content-Type: application/json
+
+{
+  "name": "Funil de Vendas"
+}
