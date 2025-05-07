@@ -1,9 +1,12 @@
+
 services:
   backend:
     build:
       context: ./crm-backend
     expose:
       - "3000"
+    volumes:
+      - ./crm-backend:/app
     environment:
       - NODE_ENV=production
       - PORT=3000
